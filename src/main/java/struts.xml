@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC 
+	"-//Apache Software Foundation//DTD Struts Configuration 2.5//EN" 
+	"http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+    <package extends="json-default" namespace="/" name="actor">
+        <action name="get-actors" method="getAllActors" class="com.highradius.actions.ActorAction">
+            
+            <result type="json">
+                <param name="">Actors Data</param>
+            </result>
+            
+            <result name="error">error.jsp</result>
+        </action>
+
+        <action name="add-actor" method="addActor" class="com.highradius.actions.ActorAction">
+            <interceptor-ref name="json">
+                <param name="enableSMD">true</param>
+            </interceptor-ref>
+            
+            <result type="json" name="added">
+            	<param name="">Actor Details</param>
+            </result>
+            
+            <result type="json" name="error"></result>
+            <result name="error">error.jsp</result>
+        </action>
+
+        <action name="update-actor" method="updateActor" class="com.highradius.actions.ActorAction">
+            <interceptor-ref name="json">
+                <param name="enableSMD">true</param>
+            </interceptor-ref>
+            
+            <result type="json" name="updated">
+            	<param name="">Actor Details</param>
+            </result>
+            
+            <result type="json" name="error"></result>
+            <result  name="error">error.jsp</result>
+        </action>
+
+        <action name="delete-actor" method="deleteActor" class="com.highradius.actions.ActorAction">
+            <interceptor-ref name="json">
+                <param name="enableSMD">true</param>
+            </interceptor-ref>
+            
+            <result type="json" name="deleted">
+            	<param name="">Actor Details</param>
+            </result>
+            
+            <result type="json" name="error"></result>
+            <result name="error">error.jsp</result>
+        </action>
+    </package>
+</struts>
