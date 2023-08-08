@@ -5,7 +5,7 @@ This is a simple web application that allows users to perform CRUD (Create, Read
 ##  Requirements
 
 - DataBase connecting [JAR file](http://www.java2s.com/Code/Jar/m/Downloadmysqlconnectorjar.htm)
-- Spring Boot [JAR files]([https://jar-download.com/download-handling.php](http://www.java2s.com/example/jar/s/download-springboot153releasejar-file.html))
+- Spring Boot [JAR files](http://www.java2s.com/example/jar/s/download-springboot153releasejar-file.html)
 - Struts [JAR file](http://www.java2s.com/Code/Jar/s/Downloadstrutscore1310jar.htm#google_vignette)
 
 ## Features
